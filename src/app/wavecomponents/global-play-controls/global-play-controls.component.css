@@ -1,0 +1,52 @@
+.buttons {
+  margin: 2rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: var(--prog);
+  border-radius: 50%;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px #d4d4d4, -5px -5px 10px #ffffff;
+}
+
+.button-sm {
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.75;
+}
+
+.button-md {
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0.85;
+}
+.button-lg {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.shadowin {
+  box-shadow: inset 6px 6px 12px #c8c8c8, inset -6px -6px 12px #ffffff;
+  transition: box-shadow 3s;
+}
+.shadowout {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 3s;
+}
+.button {
+  color: #000;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 75px auto;
+  background-color: #fff;
+  color: #444;
+}

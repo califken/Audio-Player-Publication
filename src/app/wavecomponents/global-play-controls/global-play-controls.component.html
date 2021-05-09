@@ -1,0 +1,17 @@
+<div class="card">
+
+  <div class="wrapper">
+    <div class="buttons">
+
+      <a (click)="wavesurferService.play('https://wavesurfer-js.org/example/media/demo.wav')"
+        [ngClass]="{'shadowin': wavesurferService.isPlaying, 'shadowout': !wavesurferService.isPlaying}"
+        class="button button-lg">
+        <i [ngClass]="{'fa-pause': wavesurferService.isPlaying, 'fa-play': !wavesurferService.isPlaying}" class="fas fa-pause fa-lg" aria-hidden="true" aria-hidden="true"></i>
+        <span class="sr-only">Pause</span>
+      </a>
+      Current Track {{ currenttrack }}
+    </div>
+    <div id="footerwave"></div>
+  </div>
+
+</div>

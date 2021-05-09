@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <li *ngFor="let audio of audiolibrary"
+    (click)="wavesurferService.playTrack('https://www.kennethcaple.com/api/mp3/'+audio.filename,audio.name,audio.uuid,audio.uuid)"
+    class="list-group-item list-group-item-action active" aria-current="true">
+    >{{ audio.name }}
+  </li>
+</ul>
